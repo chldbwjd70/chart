@@ -9,7 +9,6 @@ from django.db.models import Count, Q
 import json,datetime
 from django.http import JsonResponse  # for chart_data()
 from chart.models import *
-import pyarrow as pa
 
 def home(request):
     return render(request, 'home.html')
