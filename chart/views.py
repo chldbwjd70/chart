@@ -1,12 +1,9 @@
 # chart/views.py
-from dask.dataframe.io.parquet import arrow
 from django.shortcuts import render
-from numba import serialize
-from pyodbc import Date
 
-from chart.models import Passenger, covid19
+
 from django.db.models import Count, Q
-import json,datetime
+import json
 from django.http import JsonResponse  # for chart_data()
 from chart.models import *
 
